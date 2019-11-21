@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include<stdlib.h>
 void hanoi(int n, char one, char two, char three){
 	if (n == 1){
 		printf("%c-->%c\n", one, three);
@@ -16,5 +17,6 @@ int main(){
 	printf("input the number of diskes:");
 	scanf("%d", &n);
 	hanoi(n, 'A', 'B', 'C');
+	system("pause");
 	return 0;
 }
